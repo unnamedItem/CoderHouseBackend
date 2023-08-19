@@ -1,0 +1,92 @@
+[
+    {
+        "id": "921f2535-d822-4a4e-ba9f-87760f757e38",
+        "title": "item1",
+        "price": 100,
+        "description": "This is a description",
+        "code": "1",
+        "stock": 0,
+        "thumbnail": ""
+    },
+    {
+        "id": "ba313ad5-5c1a-4d5c-a8fb-6349514fb02d",
+        "title": "item2",
+        "price": 200,
+        "description": "This is a description",
+        "code": "2",
+        "stock": 0,
+        "thumbnail": ""
+    },
+    {
+        "id": "87b54132-88bc-4317-b309-38faf0f1e387",
+        "title": "item3",
+        "price": 300,
+        "description": "This is a description",
+        "code": "3",
+        "stock": 0,
+        "thumbnail": ""
+    },
+    {
+        "id": "e94d4dad-06e6-407d-b247-ff7c82b5dd87",
+        "title": "item4",
+        "price": 400,
+        "description": "This is a description",
+        "code": "4",
+        "stock": 0,
+        "thumbnail": ""
+    },
+    {
+        "id": "5f45b9a7-c142-49f3-8cd8-21a676068b52",
+        "title": "item5",
+        "price": 500,
+        "description": "This is a description",
+        "code": "5",
+        "stock": 0,
+        "thumbnail": ""
+    },
+    {
+        "id": "e7055ec8-3550-44e6-bfc1-34575188ba01",
+        "title": "item6",
+        "price": 600,
+        "description": "This is a description",
+        "code": "6",
+        "stock": 0,
+        "thumbnail": ""
+    },
+    {
+        "id": "e1ab71d0-3517-447f-be2f-cb9bb47283e4",
+        "title": "item7",
+        "price": 700,
+        "description": "This is a description",
+        "code": "7",
+        "stock": 0,
+        "thumbnail": ""
+    },
+    {
+        "id": "d67aab59-febf-4d3f-bb7a-c2da24abdeea",
+        "title": "item8",
+        "price": 800,
+        "description": "This is a description",
+        "code": "8",
+        "stock": 0,
+        "thumbnail": ""
+    },
+    {
+        "id": "0ce62eb2-fb98-4a0d-86f1-237b60f7ed47",
+        "title": "item9",
+        "price": 900,
+        "description": "This is a description",
+        "code": "9",
+        "stock": 0,
+        "thumbnail": ""
+    },
+    {
+        "id": "1e59311e-7743-4b56-9f66-241a470b1290",
+        "title": "item10",
+        "price": 1000,
+        "description": "This is a description",
+        "code": "10",
+        "stock": 0,
+        "thumbnail": ""
+    }
+]
