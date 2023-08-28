@@ -38,7 +38,6 @@ cartRouter.post('/:cid/product/:pid', (req, res) => {
         let pid = req.params.pid;
         res.send(cartManager.addProduct(cid, pid));
     } catch (err) {
-        console.log(err)
         res.status(500).send(err);
     }
 })
