@@ -1,3 +1,9 @@
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 function required(data, key, validate = () => true, help = "") {
     let value = data[key];
 
@@ -18,5 +24,6 @@ const isNumber = value => typeof value === 'number';
 export {
     required,
     isString,
-    isNumber
+    isNumber,
+    __dirname
 }

@@ -1,17 +1,27 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import handlebars from 'express-handlebars';
+import { Server } from 'socket.io';;
 
-import productRouter from './routes/productsRouter.js';
-import cartRouter from './routes/cartRouter.js';
+import { __dirname } from './utils.js';
+import viewRoutes from './routes/view.router.js';
+import configAPI from './config.api.js';
+import configSocket from './config.socket.js';
 
 dotenv.config();
 
 const app = express();
+const httpServer = app.listen(process.env.PORT, () => console.log(`Server run on port ${process.env.PORT}`));
+const socketServer = new Server(httpServer);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use('/api/products/', productRouter);
-app.use('/api/carts/', cartRouter);
+configAPI(app, socketServer)
+configSocket(socketServer)
 
-app.listen(process.env.PORT, () => console.log(`Server run on port ${process.env.PORT}`))
+app.engine('handlebars', handlebars.engine());
+app.set('views', __dirname + '/views');
+app.set('view engine', 'handlebars');
+app.use(express.static(__dirname + '/public'));
+app.use('/', viewRoutes);

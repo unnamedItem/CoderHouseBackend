@@ -1,6 +1,6 @@
 import crypto from 'crypto';
 import fs from 'fs';
-import { ProductManager } from './ProductManager.js';
+import { ProductManager } from './ClassProductManager.js';
 
 const productManager = new ProductManager('./src/data/products.json');
 

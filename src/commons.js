@@ -7,7 +7,15 @@ function baseReponse(resource, response, status) {
     }
 }
 
+function baseViewOptions(options) {
+    return {
+        style: "style.css",
+        title: "Develop",
+        ...options
+    }
+}
 
 export {
-    baseReponse
+    baseReponse,
+    baseViewOptions
 }

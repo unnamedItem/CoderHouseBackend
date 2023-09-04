@@ -1,5 +1,5 @@
 {
-  "name": "p3",
+  "name": "develop",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "socket.io": "^4.7.2"
   },
   "type": "module"
 }
