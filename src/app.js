@@ -1,7 +1,8 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import handlebars from 'express-handlebars';
-import { Server } from 'socket.io';;
+import mongoose from 'mongoose';
+import { Server } from 'socket.io';
 
 import { __dirname } from './utils.js';
 import viewRoutes from './routes/view.router.js';
@@ -13,6 +14,13 @@ dotenv.config();
 const app = express();
 const httpServer = app.listen(process.env.PORT, () => console.log(`Server run on port ${process.env.PORT}`));
 const socketServer = new Server(httpServer);
+
+mongoose.connect(process.env.DB_STRING, (error) => {
+    if (error) {
+        console.log("Cannot connect to database: " + error);
+        process.exit();
+    }
+});
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
